@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EffettuaModificaOreSonno"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/titolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="PERSONAL HEALTH MONITOR"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/sottotitolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titolo"
+        android:layout_centerHorizontal="true"
+        android:text="Effettua le modifiche sul report"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        />
+
+    <TextView
+        android:id="@+id/selectDateSonnoModifica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Seleziona la data"
+        android:layout_below="@id/sottotitolo"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="25dp"
+        android:textColorHint="#ffff"
+        android:textColor="#ffff"/>
+
+    <EditText
+        android:id="@+id/valore_ore_sonno_modifica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectDateSonnoModifica"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:ems="10"
+        android:inputType="time"
+        android:hint="Ore di sonno"
+        android:textColorHint="#ffff"
+        android:textColor="#ffff"/>
+
+    <EditText
+        android:id="@+id/commento_ore_sonno_modifica"
+        android:layout_width="280dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/sottotitolo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Commento (opzionale)"
+        android:inputType="textMultiLine"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff" />
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/commento_ore_sonno_modifica"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/home_modifica_ore_sonno"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/img_home"
+            android:onClick="home"/>
+
+        <Button
+            android:id="@+id/salve_modifica_ore_sonno"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/img_salvataggio"
+            android:layout_centerHorizontal="true"
+            android:onClick="salvaModificaOreSonno"/>
+
+        <Button
+            android:id="@+id/eliminaOreSonno"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/img_elimina"
+            android:onClick="eliminaOreSonnoBTN"/>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SetSoglia">
+
+    <TextView
+        android:id="@+id/titolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="PERSONAL HEALTH MONITOR - Inserisci l'intervallo ideale"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titolo"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/maxTemperatura"
+            android:layout_marginLeft="10dp"
+            android:text="Temperatura corporea"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/maxTemperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:hint="max"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/minTemperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="85dp"
+            android:hint="min"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/maxPressioneMassima"
+            android:text="Pressione massima"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/maxPressioneMassima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:hint="max"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/minPressioneMassima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="85dp"
+            android:hint="min"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/maxPressioneMinima"
+            android:text="Pressione minima"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/maxPressioneMinima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:hint="max"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/minPressioneMinima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="85dp"
+            android:hint="min"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/maxGlicemia"
+            android:layout_marginLeft="10dp"
+            android:text="Indice glicemico"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/maxGlicemia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:hint="max"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/minGlicemia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="85dp"
+            android:hint="min"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/maxOreSonno"
+            android:text="Ore di sonno"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/maxOreSonno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:hint="max"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/minOreSonno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="85dp"
+            android:hint="min"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/maxPeso"
+            android:text="Peso corporeo"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/maxPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:hint="max"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/minPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="85dp"
+            android:hint="min"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titolo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp">
+
+        <TextView
+            android:id="@+id/textSpinnerControllo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Periodo di controllo"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerControllo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textSpinnerControllo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout7"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp">
+
+        <Button
+            android:id="@+id/salva_soglie"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_salvataggio"
+            android:onClick="salvaSoglie" />
+
+        <Button
+            android:id="@+id/home_soglie"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/salva_soglie"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_home"
+            android:onClick="homeSoglie" />
+
+        <Button
+            android:id="@+id/torna_indietro_soglie"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/home_soglie"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/img_torna_indietro"
+            android:onClick="backSoglie" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

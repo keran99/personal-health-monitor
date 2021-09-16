@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PressioneSanguigna"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/titolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="PERSONAL HEALTH MONITOR - Pressione sanguigna"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/selectDatePressioneSanguigna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Seleziona la data"
+        android:layout_below="@id/titolo"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="25dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/valore_pressione_minima"
+        android:layout_below="@id/selectDatePressioneSanguigna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="8"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="40dp"
+        android:hint="Pressione minima"
+        android:textSize="20dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/valore_pressione_massima"
+        android:layout_below="@id/valore_pressione_minima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="8"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="40dp"
+        android:hint="Pressione massima"
+        android:textSize="20dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/commento_pressione"
+        android:layout_width="290dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/titolo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Commento (opzionale)"
+        android:inputType="textMultiLine"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+
+    <RelativeLayout
+        android:layout_width="274dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/commento_pressione"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/salva_pressione"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/img_salvataggio"
+            android:onClick="salvaPressione"/>
+
+        <Button
+            android:id="@+id/home_pressione"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/img_home"
+            android:layout_centerHorizontal="true"
+            android:onClick="home"/>
+
+        <Button
+            android:id="@+id/torna_indietro_pressione"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/img_torna_indietro"
+            android:onClick="back"/>
+
+    </RelativeLayout>
+</RelativeLayout>

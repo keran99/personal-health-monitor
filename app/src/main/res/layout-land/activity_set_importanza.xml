@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetImportanza"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/titolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="PERSONAL HEALTH MONITOR"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/sottotitolo"
+        android:layout_below="@id/titolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="imposta i livelli di importanza"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sottotitolo"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperatura corporea"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerTemperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pressione sanguigna"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerPressione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indice glicemico"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerGlicemia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ore di sonno"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerOreSonno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peso corporeo"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/salva_importanza"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/img_salvataggio"
+            android:onClick="salvaImportanza"/>
+
+        <Button
+            android:id="@+id/home_importanza"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/img_home"
+            android:layout_centerHorizontal="true"
+            android:onClick="homeImportanza"/>
+
+        <Button
+            android:id="@+id/torna_indietro_importanza"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/img_torna_indietro"
+            android:onClick="backImportanza" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

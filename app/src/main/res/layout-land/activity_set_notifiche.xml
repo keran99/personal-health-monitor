@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetNotifiche"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/titolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="PERSONAL HEALTH MONITOR"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/sottotitolo"
+        android:layout_below="@id/titolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Imposta l'orario della notifica"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/textViewOrario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sottotitolo"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+        android:text="Orario"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/BtnOrario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_toEndOf="@+id/textViewOrario"
+        android:layout_below="@+id/sottotitolo"
+        android:layout_marginTop="40dp"
+        android:text="imposta l'orario" />
+
+</RelativeLayout>

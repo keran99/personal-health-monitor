@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.progetto_lam">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SetNotifiche"></activity>
+        <activity android:name=".SetSoglia" />
+        <activity android:name=".SetImportanza" />
+        <activity android:name=".GraficoLinee" />
+        <activity android:name=".GraficoRadar" />
+        <activity android:name=".GraficoTorta" />
+        <activity
+            android:name=".ui.login.graficoTorta"
+            android:label="@string/title_activity_grafico_torta" />
+        <activity android:name=".Istogramma" />
+        <activity android:name=".EffettuaModificaOreSonno" />
+        <activity android:name=".EffettuaModificaPesoCorporeo" />
+        <activity android:name=".EffettuaModificaIndiceGlicemia" />
+        <activity android:name=".EffettuaModificaPressioneSanguigna" />
+        <activity android:name=".EffettuaModificaTemperaturaCorporea" />
+        <activity android:name=".ModificaPesoCorporeo" />
+        <activity android:name=".ModificaOreSonno" />
+        <activity android:name=".ModificaIndiceGlicemico" />
+        <activity android:name=".ModificaPressioneSanguigna" />
+        <activity android:name=".ModificaTemperaturaCorporea" />
+        <activity android:name=".ModificaTipo" />
+        <activity android:name=".VisualizzaPesoCorporeo" />
+        <activity android:name=".VisualizzaOreSonno" />
+        <activity android:name=".VisualizzaIndiceGlicemico" />
+        <activity android:name=".VisualizzaPressioneSanguigna" />
+        <activity android:name=".VisualizzaTemperaturaCorporea" />
+        <activity android:name=".VisualizzaImportanza" />
+        <activity android:name=".VisualizzaGiorno" />
+        <activity android:name=".VisualizzaTipo" />
+        <activity android:name=".PesoCorporeo" />
+        <activity android:name=".OreSonno" />
+        <activity android:name=".IndiceGlicemico" />
+        <activity android:name=".PressioneSanguigna" />
+        <activity android:name=".TemperaturaCorporea" />
+        <activity android:name=".Impostazioni" />
+        <activity android:name=".VisualizzaGrafici" />
+        <activity android:name=".ModificaReport" />
+        <activity android:name=".VisualizzaReport" />
+        <activity android:name=".InsertMenu" />
+        <activity android:name=".Select_Insert" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AlertReceiver"/>
+    </application>
+
+</manifest>

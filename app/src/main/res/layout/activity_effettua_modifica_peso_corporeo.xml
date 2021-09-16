@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EffettuaModificaPesoCorporeo"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/titolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="PERSONAL HEALTH MONITOR"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/sottotitolo"
+        android:layout_below="@id/titolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Effettua le modifiche sul report"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        />
+
+    <TextView
+        android:id="@+id/selectDatePesoModifica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Select Date"
+        android:layout_below="@id/sottotitolo"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColorHint="#ffff"
+        android:textColor="#ffff"/>
+
+    <EditText
+        android:id="@+id/valore_peso_modifica"
+        android:layout_below="@id/selectDatePesoModifica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:hint="Kg"
+        android:textColorHint="#ffff"
+        android:textColor="#ffff"/>
+
+    <EditText
+        android:id="@+id/commento_peso_modifica"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/valore_peso_modifica"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:hint="Commento (opzionale)"
+        android:textColorHint="#ffff"
+        android:textColor="#ffff"/>
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/commento_peso_modifica"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/home_modifca_peso"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/img_home"
+            android:onClick="home"/>
+
+        <Button
+            android:id="@+id/salve_modifca_peso"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/img_salvataggio"
+            android:layout_centerHorizontal="true"
+            android:onClick="salvaModificaPeso"/>
+
+        <Button
+            android:id="@+id/eliminaPeso"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/img_elimina"
+            android:onClick="eliminaPesoBTN"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

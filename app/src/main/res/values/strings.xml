@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Progetto_LAM</string>
+
+    <string-array name="valoreImportanza">
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+    </string-array>
+
+    <string-array name="tipoDato">
+        <item> Temperatura corporea </item>
+        <item> Pressione sanguigna - massimo </item>
+        <item> Pressione sanguigna - minimo </item>
+        <item> Indice glicemia </item>
+        <item> Ore sonno </item>
+        <item> Peso corporeo </item>
+    </string-array>
+
+    <string-array name="range">
+        <item> Ultimi 5 report </item>
+        <item> Ultimi 10 report </item>
+        <item> Ultimi 20 report </item>
+        <item> Ultimi 30 report </item>
+        <item> Tutti i report </item>
+    </string-array>
+
+
+    <string name="title_activity_grafico_torta">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>
