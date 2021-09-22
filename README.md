@@ -13,5 +13,5 @@ To run the app:
   2. add it to **Android Studio IDE**
   3. run it in **Android studio**
 
-### Author
+## Author
 Keran Jegasothy
